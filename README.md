@@ -1,7 +1,7 @@
 # embulk_digdag
 embulk / digdag の検証用
 
-# Docker-compose立ち上げ
+# getting start docker-compose
 
 ```
 $ docker-compose up
