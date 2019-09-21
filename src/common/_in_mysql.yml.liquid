@@ -1,0 +1,12 @@
+in:
+  type: mysql
+  user: root
+  database: test
+  host: mysql01
+  incremental: true
+  incremental_columns:
+    - id
+  options: {useLegacyDatetimeCode: false, serverTimezone: Asia/Tokyo}
+  column_options:
+    create_date: {value_type: timestamp}
+    update_date: {value_type: timestamp}

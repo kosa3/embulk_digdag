@@ -1,0 +1,9 @@
+out:
+  type: mysql
+  user: root
+  database: test
+  host: mysql02
+  mode: merge
+  column_options:
+    create_date: {value_type: timestamp, format: "%Y-%m-%d %H:%M:%S"}
+    update_date: {value_type: timestamp, format: "%Y-%m-%d %H:%M:%S"}

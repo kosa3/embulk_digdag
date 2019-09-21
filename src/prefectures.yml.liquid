@@ -1,0 +1,7 @@
+{% include 'common/in_mysql' %}
+  table: prefectures
+  incremental: true
+  incremental_columns: [id]
+
+{% include 'common/out_mysql' %}
+  table: prefectures

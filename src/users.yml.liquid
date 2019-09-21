@@ -1,0 +1,7 @@
+{% include 'common/in_mysql' %}
+  table: users
+  after_select: |
+    UPDATE users SET name = '***';
+
+{% include 'common/out_mysql' %}
+  table: users
