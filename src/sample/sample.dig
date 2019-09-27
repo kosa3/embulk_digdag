@@ -1,0 +1,8 @@
+timezone: Asia/Tokyo
+
++step:
+  for_each>:
+    table: [prefectures, region, users]
+  _do:
+    sh>: embulk run ../${table}.yml.liquid
+  _parallel: true
